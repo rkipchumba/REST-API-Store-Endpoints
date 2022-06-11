@@ -64,7 +64,7 @@ def create_item_in_store(name):
 
 #get /store/<name>/item data: {name :}
 @app.route("/store/<string:name>/item")
-def get_item_in_store():
+def get_item_in_store(name):
     for store in stores:
         if store['name'] == name:
             return jsonify({'items':store['items']})
