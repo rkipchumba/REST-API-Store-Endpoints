@@ -7,7 +7,7 @@ stores = [
         'items': [
             {
             'name':'my item', 
-            'price': 15.99 
+            'price': 105.99 
             }
         ]
     }
@@ -21,7 +21,7 @@ def home():
 #GET - used to send data back only
 
 #post /store data: {name :}
-@app.route("/store", methods=["POST"])
+@app.route("/store", methods=["POST"])  
 def create_store():
     request_data = request.geet_json()
     new_store = {
